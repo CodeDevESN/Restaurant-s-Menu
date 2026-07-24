@@ -205,6 +205,7 @@ a:hover{
 .menu-items.drink{
     width: 100%;
     aspect-ratio: 1/1;
+     object-fit: cover;
 }
 .menu-items.drink img{
     width: 100%;
@@ -406,6 +407,13 @@ nav a:hover{
     font-size: 18px;
     color: black;
     margin: 0%;
+}
+@media  (max-width: 600px){
+.service-card{
+    width: 70px;
+    min-height: 80px;
+    font-size: 10px;
+}
 }
 .nav-footer{
     display: absolute;
