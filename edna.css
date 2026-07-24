@@ -408,7 +408,10 @@ nav a:hover{
     margin: 0%;
 }
 .nav-footer{
-    display: flex;
+    display: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     justify-content: space-between;
     text-align: center;
     background-color: yellowgreen;
