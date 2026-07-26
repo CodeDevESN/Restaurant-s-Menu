@@ -172,19 +172,20 @@ a:hover{
     color: white;
 }
 .menu-item{
-    display: none;
+    
     margin: 10px 0;
     padding: 15px 20px;
-    border: 1px solid;
-    border-radius: 8px;
+    
+    display: none;
     background-color: #fff3e0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    min-width: 120px;
+    width: 100%;
     text-align: center;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.5s;
     overflow: hidden;
+    
 }
 .menu-item.show{
     display: block;
@@ -194,48 +195,47 @@ a:hover{
     text-align: center;
     margin-bottom: 20px;
 }
-.menu-items.food{
+.menu-item.food{
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    position: relative;
 }
-.menu-items.food img{
+.menu-item.food img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     
 }
-.menu-items.drink{
+.menu-item.drink{
     width: 100%;
     aspect-ratio: 1/1;
      overflow: hidden;
      position: relative;
 }
-.menu-items.drink img{
+.menu-item.drink img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-.menu-items.snack{
+.menu-item.snack{
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
     position: relative;
 }
-.menu-items.snack img{
+.menu-item.snack img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 .menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    display: block;
     gap: 15px;
+    
 }
 #booking{
     display: block;
@@ -395,10 +395,10 @@ nav a:hover{
     align-items: center;
     gap:20px ;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 10px 5px;
 }
 .service-card{
-    width: 180px;
+    width: 200px;
     min-height: 140px;
     background: white;
     border-radius: 15px;
@@ -420,9 +420,10 @@ nav a:hover{
 }
 @media  (max-width: 600px){
 .service-card{
-    width: 40px;
-    min-height: 50px;
+    width: 50px;
+    height: 60px;
     font-size: 10px;
+    padding: auto;
 }
 }
 .nav-footer{
