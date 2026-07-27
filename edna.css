@@ -6,56 +6,66 @@ body {
     color: blueviolet;
     line-height: normal;
 }
-.profile image{
+
+.profile image {
     width: 700px;
     height: 150px;
     border-radius: 0cm;
     object-fit: cover;
     margin-bottom: 15px;
 }
-h1{
+
+h1 {
     font-size: medium;
     text-align: center;
 }
-.about-container{
-background: #fff;
-max-width: 700px;
-margin: 50px auto;
-padding: 30px;
-border-radius: 20px;
-box-shadow: 0 4px 20px rgba(red, green, blue, alpha);
+
+.about-container {
+    background: #fff;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(red, green, blue, alpha);
 }
-.p{
+
+.p {
     line-height: 1.6;
     margin-bottom: 10px;
 }
-.a{
+
+.a {
     color: blueviolet;
     font-weight: bold;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-.contact-form{
+
+.contact-form {
     max-width: 500px;
-    margin:5px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.pie-chart{
+
+.pie-chart {
     width: 100%;
     height: 200px;
     background: conic-gradient;
     border-radius: 50%;
     margin-top: 20px;
 }
-.summary{
+
+.summary {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.container{
+
+.container {
     width: 900px;
     margin: 0 auto;
     background-color: #fff;
@@ -64,40 +74,48 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.container1, .container2{
+
+.container1,
+.container2 {
     width: 40%;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.sec{
+
+.sec {
     display: flex;
     flex-wrap: wrap;
 }
-.add-transaction, .Spending breakdown{
+
+.add-transaction,
+.Spending breakdown {
     width: 90%;
     border: 1px solid;
     padding: 15px;
     border-radius: 5px;
     background-color: #fff;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
-.add-transaction input, .add-transaction select{
+
+.add-transaction input,
+.add-transaction select {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     padding: 15px;
     box-sizing: border-box;
 }
-.add-transaction button{
+
+.add-transaction button {
     width: 100%;
     padding: 8px;
     background-color: aquamarine;
@@ -108,51 +126,75 @@ a:hover{
     box-sizing: border-box;
     margin-bottom: 10px;
 }
-.transaction table{
+
+.transaction table {
     width: 800px;
     border-collapse: collapse;
 }
-.transaction th, .transaction td{
+
+.transaction th,
+.transaction td {
     border: 1px solid;
     padding: 10px;
     text-align: left;
 }
-.transaction th{
+
+.transaction th {
     background-color: blanchedalmond;
 }
-.summary table{
+
+.summary table {
     width: 800px;
     border-collapse: collapse;
 }
-.summary th, .summary td{
+
+.summary th,
+.summary td {
     border: 1px solid;
     padding: 10px;
     text-align: left;
 }
-.head{
+
+.head {
     text-align: center;
 }
-.main{
+
+.main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.h2{
+
+.h2 {
     text-align: center;
 }
-@keyframes moveDiagonal{
-    0%{top:0%; left: 0%;}
-    50%{top:70%; left:70%;}
-    100%{top: 0%; left :0%;}
+
+@keyframes moveDiagonal {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    50% {
+        top: 70%;
+        left: 70%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
 }
-#movingWord{
+
+#movingWord {
     animation: moveDiagonal 5s linear infinite;
     position: absolute;
     font-size: 50px;
     overflow: hidden;
     color: #ff5733;
 }
-.menu-buttons button{
+
+.menu-buttons button {
     margin: 2px 8px;
     padding: 10px 20px;
     cursor: pointer;
@@ -162,147 +204,167 @@ a:hover{
     font-weight: bold;
     transition: all 0.3s;
 }
-.menu-buttons button.active{
+
+.menu-buttons button.active {
     background-color: #ff6347;
     color: white;
     transform: scale(1.05);
 }
-.menu-buttons button:hover{
+
+.menu-buttons button:hover {
     background-color: #ff8c69;
     color: white;
 }
-.menu-item{
-    
+
+.menu-item {
+
     margin: 10px 0;
     padding: 15px 20px;
-    
+
     display: none;
     background-color: #fff3e0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-width: 120px;
     text-align: center;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.5s;
     overflow: hidden;
-    
+
 }
-.menu-item.show{
+
+.menu-item.show {
     display: block;
     opacity: 1;
 }
-.menu-buttons{
+
+.menu-buttons {
     text-align: center;
     margin-bottom: 20px;
 }
-.menu-item.food{
+
+.menu-item.food {
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    
+
 }
-.menu-item.food img{
+
+.menu-item.food img {
     width: 100%;
     height: 65%;
     object-fit: cover;
     display: block;
-    
+
 }
-.menu-item.drink{
-    width: 100%;
-    aspect-ratio: 1/1;
-     overflow: hidden;
-     position: relative;
-}
-.menu-item.drink img{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    display: block;
-}
-.menu-item.snack{
+
+.menu-item.drink {
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
     position: relative;
 }
-.menu-item.snack img{
+
+.menu-item.drink img {
     width: 100%;
     height: 90%;
     object-fit: cover;
     display: block;
 }
-.menu{
+
+.menu-item.snack {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-item.snack img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu {
     width: 100%;
     display: block;
     gap: 15px;
-    
+
 }
-#booking{
+
+#booking {
     display: block;
     margin: 100px auto;
     padding: 12px 25px;
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     color: white;
     font-size: 18px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
-.intro{
+
+.intro {
     display: block;
     margin: 60px auto;
     padding: 12px 10px;
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     color: white;
     font-size: 18px;
     border: none;
     border-radius: 10px;
     max-height: 250px;
 }
-.intro2{
+
+.intro2 {
     display: block;
-    margin: 100px 10px 20px;
+    margin: 100px 0 20px;
     padding: 12px 5px;
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     color: white;
     font-size: 18px;
     border: none;
     border-radius: 10px;
     max-height: 250px;
 }
-.intro2 h2{
+
+.intro2 h2 {
     color: black;
     text-align: center;
 }
-#bookingform{
+
+#bookingform {
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
     color: black;
     font-family: 'poppins';
 }
-#bookingform label{
+
+#bookingform label {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 14px;
-    
+
 }
+
 #bookingform input,
-#bookingform textarea{
+#bookingform textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 2px solid black;
     border-radius: 8px;
     background: transparent;
-    color:black;
+    color: black;
     font-size: 14px;
     position: relative;
     z-index: 1;
 }
-#bookingform button{
+
+#bookingform button {
     width: 100%;
     background-color: #ffcc00;
     color: black;
@@ -312,7 +374,8 @@ a:hover{
     padding: 12px;
     cursor: pointer;
 }
-.floating-icons{
+
+.floating-icons {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -323,7 +386,8 @@ a:hover{
     z-index: 999;
     animation: SlideIn 1s ease forwads;
 }
-#language-switcher{
+
+#language-switcher {
     position: fixed;
     top: 40px;
     right: 20px;
@@ -331,7 +395,8 @@ a:hover{
     border-radius: 50%;
     padding: 10px;
 }
-.chat-label{
+
+.chat-label {
     background-color: #25D366;
     color: black;
     font-size: 14px;
@@ -341,31 +406,44 @@ a:hover{
     font-weight: bold;
     animation: pulse 2s infinite;
 }
-@keyframes pulse{
-    0%{transform: scale(1);}
-    50%{transform: scale(1.1);}
-    100%{transform: scale(1);}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
-.floating-icons a img{
+
+.floating-icons a img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     padding: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
 }
-#areaselection{
+
+#areaselection {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-#myButton{
+
+#myButton {
     text-align: center;
     font-size: xx-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
 }
-#themeToggle{
+
+#themeToggle {
     position: absolute;
     top: 2px;
     left: 10px;
@@ -375,24 +453,28 @@ a:hover{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
-nav{
+
+nav {
     background-color: #007bff;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
     gap: 20px;
 }
-nav a{
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-nav a:hover{
+
+nav a:hover {
     text-decoration: underline;
 }
-.container3{
+
+.container3 {
     margin: 10px;
     padding: 10px;
     width: 500px;
@@ -401,15 +483,17 @@ nav a:hover{
     border-radius: 5px;
 
 }
-.service-container{
+
+.service-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px ;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 10px 5px;
 }
-.service-card{
+
+.service-card {
     width: 200px;
     min-height: 140px;
     background: white;
@@ -420,25 +504,29 @@ nav a:hover{
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.service-card i{
+
+.service-card i {
     font-size: 40px;
     margin-bottom: 15px;
     color: #d35400;
 }
-.service-card h3{
+
+.service-card h3 {
     font-size: 10px;
     color: black;
     margin: 0%;
 }
-@media  (max-width: 600px){
-.service-card{
-    width: 50px;
-    height: 60px;
-    font-size: 10px;
-    padding: auto;
+
+@media (max-width: 600px) {
+    .service-card {
+        width: 50px;
+        height: 60px;
+        font-size: 10px;
+        padding: auto;
+    }
 }
-}
-.nav-footer{
+
+.nav-footer {
     display: absolute;
     bottom: 0;
     left: 0;
@@ -447,7 +535,8 @@ nav a:hover{
     text-align: center;
     background-color: yellowgreen;
 }
-.words{
+
+.words {
     font-size: 32px;
     font-weight: 800;
     letter-spacing: 3px;
